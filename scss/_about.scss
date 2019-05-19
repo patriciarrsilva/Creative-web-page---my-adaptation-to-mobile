@@ -1,36 +1,60 @@
-.aboutline1{
-    margin-top: $gridgutter * 4;
-    position: relative;
-    z-index: 2;
-    h4{
-        font-size: 36px;
-        margin: 0;
-        .iczarrow{
-            font-size: 28px;
-        }
+.aboutline1 {
+  margin-top: $gridgutter * 4;
+  position: relative;
+  z-index: 2;
+  h4 {
+    font-size: 36px;
+    margin: 0;
+    .iczarrow {
+      font-size: 28px;
     }
+  }
 }
-.aboutline2{
+.aboutline2 {
+  margin: ($gridgutter * 2) auto;
+}
+
+#services {
+  h2 {
+    font-size: $gridgutter * 2;
+    margin: 0;
+  }
+  .serviceslist {
+    margin-top: $gridgutter * 2;
+    .iconz {
+      @extend .secondary;
+      font-size: 112px;
+    }
+    h3 {
+      font-size: 30px;
+    }
+    p {
+      @extend .graydark;
+    }
+  }
+}
+
+@media (min-width: 769px) {
+}
+
+@media (min-width: 1260px) {
+  .aboutline2 {
     position: relative;
     z-index: 1;
-    top: - $gridgutter * 4;
-}
-#services{
-    h2{
-        font-size: $gridgutter * 3;
-        margin: 0;
+    top: -$gridgutter * 4;
+  }
+  #services {
+    h2 {
+      font-size: $gridgutter * 3;
     }
-    .serviceslist{
-        margin-top: $gridgutter * 3;
-        .iconz{
-            @extend .secondary;
-            font-size: 64px;
-        }
-        h3{
-            font-size: 24px;
-        }
-        p{
-            @extend .graydark;
-        }
+    .serviceslist {
+      margin-top: $gridgutter * 3;
+      .iconz {
+        font-size: 64px;
+      }
+      h3 {
+        font-size: 24px;
+      }
     }
+  }
 }

@@ -1,0 +1,21 @@
+{
+  "name": "creative-web-page-responsive",
+  "version": "1.0.0",
+  "description": "## What is the purpose of this repository?",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass ./scss/styles.scss ./css/styles.css",
+    "watch": "sass --watch ./scss/styles.scss ./css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patriciarrsilva/Creative-web-page-my-adaptation-to-mobile.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patriciarrsilva/Creative-web-page-my-adaptation-to-mobile/issues"
+  },
+  "homepage": "https://github.com/patriciarrsilva/Creative-web-page-my-adaptation-to-mobile#readme"
+}
