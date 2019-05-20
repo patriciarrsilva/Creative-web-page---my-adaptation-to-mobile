@@ -5,7 +5,7 @@ footer {
   background-repeat: no-repeat;
   padding: $gridgutter * 2;
   h2 {
-    font-size: 72px;
+    font-size: 56px;
     margin: 0;
   }
   p {
@@ -26,7 +26,17 @@ footer {
 }
 
 @media (min-width: 769px) {
+  footer {
+    h2 {
+      font-size: 60px;
+    }
+  }
 }
 
 @media (min-width: 1260px) {
+  footer {
+    h2 {
+      font-size: 72px;
+    }
+  }
 }

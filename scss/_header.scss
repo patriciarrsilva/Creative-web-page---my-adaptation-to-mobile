@@ -15,7 +15,7 @@ body {
           font-family: $titlesfont, sans serif;
         }
         &.hamburgermenu {
-          font-size: 24px;
+          font-size: 32px;
         }
       }
     }
@@ -51,6 +51,13 @@ body {
     > header {
       background-size: cover;
       background-position: right center;
+      nav {
+        a {
+          &.hamburgermenu {
+            font-size: 24px;
+          }
+        }
+      }
     }
   }
 }

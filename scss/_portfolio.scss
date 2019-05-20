@@ -4,10 +4,13 @@
 #clients {
   margin-top: $gridgutter * 4;
   h2 {
-    font-size: $gridgutter * 3;
+    font-size: 56px;
     margin: 0;
   }
   .clientslist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-top: $gridgutter * 2;
     img {
       @extend .animate;
@@ -21,11 +24,12 @@
   }
 }
 
-.col-m4 .col-m2 {
-  float: left;
-}
-
 @media (min-width: 769px) {
+  #clients {
+    h2 {
+      font-size: $gridgutter * 2;
+    }
+  }
 }
 
 @media (min-width: 1260px) {

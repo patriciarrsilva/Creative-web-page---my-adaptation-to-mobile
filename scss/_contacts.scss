@@ -2,22 +2,27 @@
   margin-top: $gridgutter * 3;
   background-color: $graylight;
   display: flex;
+
   > .col6 {
     &.formcontainer {
       padding-right: $gridgutter / 2;
       .form {
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: $gridgutter / 2;
+        padding-right: $gridgutter / 2;
         display: block;
         float: right;
-        width: $gridwidth / 2 - $gridgutter;
         padding-bottom: $gridgutter * 2;
         form {
           h2 {
-            font-size: 72px;
+            font-size: 56px;
             margin: $gridgutter * 3 0 0;
           }
           p {
             @extend .graydark;
             margin: $gridgutter * 1.5 0;
+            text-align: center;
           }
           input,
           textarea {
@@ -53,6 +58,7 @@
       }
     }
     &#map {
+      height: 250px;
       background-image: url(../imgs/map.JPG);
       background-size: cover;
       background-position: right top;
@@ -62,7 +68,42 @@
 }
 
 @media (min-width: 769px) {
+  #contacts {
+    > .col6 {
+      &.formcontainer {
+        .form {
+          form {
+            h2 {
+              font-size: 60px;
+            }
+          }
+        }
+      }
+      &#map {
+        height: 500px;
+      }
+    }
+  }
 }
 
 @media (min-width: 1260px) {
+  #contacts {
+    > .col6 {
+      &.formcontainer {
+        .form {
+          box-sizing: content-box;
+          width: $gridwidth / 2 - $gridgutter;
+          form {
+            h2 {
+              font-size: 72px;
+            }
+          }
+        }
+      }
+
+      &#map {
+        height: unset;
+      }
+    }
+  }
 }

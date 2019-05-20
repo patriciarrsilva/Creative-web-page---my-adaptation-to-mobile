@@ -39,4 +39,16 @@
   display: block;
   width: 100%;
   height: auto;
+
+  &--firstline {
+    width: 50%;
+    float: left;
+  }
+}
+
+@media (min-width: 1260px) {
+  .imgfit--firstline {
+    width: 100%;
+    float: none;
+  }
 }

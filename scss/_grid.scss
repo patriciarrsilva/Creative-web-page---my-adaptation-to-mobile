@@ -31,6 +31,20 @@
 }
 
 @media (min-width: 769px) {
+  .gridrowfull,
+  .gridrow {
+    @for $i from 1 through $gridcolumns {
+      .col-t#{$i} {
+        box-sizing: border-box;
+        width: percentage($i/$gridcolumns);
+        padding-left: $gridgutter / 2;
+        padding-right: $gridgutter / 2;
+      }
+      .offset-t#{$i} {
+        margin-left: percentage($i/$gridcolumns);
+      }
+    }
+  }
 }
 
 @media (min-width: 1260px) {

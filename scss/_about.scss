@@ -1,26 +1,41 @@
+#about {
+  margin-bottom: 150px;
+}
+
 .aboutline1 {
   margin-top: $gridgutter * 4;
   position: relative;
   z-index: 2;
   h4 {
-    font-size: 36px;
+    font-size: 30px;
     margin: 0;
     .iczarrow {
       font-size: 28px;
     }
   }
+  .col5 {
+    display: none;
+  }
 }
+
 .aboutline2 {
-  margin: ($gridgutter * 2) auto;
+  margin: 100px auto;
 }
 
 #services {
   h2 {
-    font-size: $gridgutter * 2;
+    font-size: 56px;
     margin: 0;
   }
   .serviceslist {
     margin-top: $gridgutter * 2;
+    .col-m4 {
+      margin-bottom: 50px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
     .iconz {
       @extend .secondary;
       font-size: 112px;
@@ -35,6 +50,41 @@
 }
 
 @media (min-width: 769px) {
+  #about {
+    margin-bottom: 0;
+  }
+
+  .aboutline1 {
+    h4 {
+      font-size: 36px;
+    }
+    .col5 {
+      display: block;
+    }
+  }
+
+  .aboutline2 {
+    margin: 0 auto 100px;
+  }
+
+  #services {
+    h2 {
+      font-size: $gridgutter * 3;
+    }
+    .serviceslist {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: $gridgutter * 3;
+
+      .iconz {
+        font-size: 55px;
+      }
+      h3 {
+        font-size: 26px;
+      }
+    }
+  }
 }
 
 @media (min-width: 1260px) {
@@ -42,13 +92,17 @@
     position: relative;
     z-index: 1;
     top: -$gridgutter * 4;
+    margin: 0 auto;
   }
+
   #services {
     h2 {
       font-size: $gridgutter * 3;
     }
     .serviceslist {
-      margin-top: $gridgutter * 3;
+      .col-m4 {
+        margin-bottom: 0;
+      }
       .iconz {
         font-size: 64px;
       }
