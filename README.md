@@ -2,7 +2,7 @@
 
 ## What is the purpose of this repository?
 
-Starting from a given desktop version (initial commit), I'm creating a responsive web page with a mobile first approach.
+Starting from a given desktop version (initial commit) and a mobile prototype, I'm creating a responsive web page with a mobile first approach.
 
 ## Quickstart
 
