@@ -8,6 +8,11 @@
   </head>
   <body>
     <header>
+      <div id="videoheader">
+        <video muted autoplay loop poster="imgs/header.jpg">
+          <source src="./header.mp4" type="video/mp4">
+        </video>
+      </div>
       <nav class="gridrow">
         <div class="col6 col-m2">
           <a href="#" class="logo" title="homepage">creative.</a>
@@ -34,12 +39,26 @@
             </h4>
           </div>
           <div class="col5 col-t3">
-            <img class="imgfit" src="imgs/about2.jpg" alt="about creative." />
+            <picture class="imgfit">
+              <source srcset="imgs/about2.jpg" media="(min-width: 1260px)" />
+              <source
+                srcset="imgs/about1.jpg"
+                media="(min-width: 769px)"
+              />
+              <img src="about2.jpg" alt="about creative." />
+            </picture>
           </div>
         </div>
         <div class="gridrow aboutline2">
           <div class="col7 offset2 col-t6 offset-t3 col-m4 offset-m0">
-            <img class="imgfit" src="imgs/about1.jpg" alt="about creative." />
+            <picture class="imgfit">
+              <source srcset="imgs/about1.jpg" media="(min-width: 1260px)" />
+              <source
+                srcset="imgs/about2.jpg"
+                media="(min-width: 769px)"
+              />
+              <img src="imgs/about1.jpg" alt="about creative." />
+            </picture>
           </div>
         </div>
       </section>
@@ -76,23 +95,50 @@
       </section>
       <section class="gridrowfull nogutter imggrid">
         <div class="col4 col-m4">
-          <img
-            src="imgs/portfolio-08.jpg"
-            alt="portfolio 8"
-            class="imgfit imgfit--firstline"
-          />
-          <img
-            src="imgs/portfolio-05.jpg"
-            alt="portfolio 5"
-            class="imgfit imgfit--firstline"
-          />
+          <picture class="imgfit imgfit--firstline">
+            <source
+              srcset="imgs/portfolio-08.jpg"
+              media="(min-width: 1260px)"
+            />
+            <source srcset="imgs/portfolio-03.jpg" media="(min-width: 769px)" />
+            <img src="imgs/portfolio-08.jpg" alt="portfolio 8" />
+          </picture>
+          <picture class="imgfit imgfit--firstline">
+            <source
+              srcset="imgs/portfolio-05.jpg"
+              media="(min-width: 1260px)"
+            />
+            <source srcset="imgs/portfolio-04.jpg" media="(min-width: 769px)" />
+            <img src="imgs/portfolio-05.jpg" alt="portfolio 5" />
+          </picture>
         </div>
         <div class="col4 col-m2">
-          <img src="imgs/portfolio-09.jpg" alt="portfolio 9" class="imgfit" />
+          <picture class="imgfit">
+            <source
+              srcset="imgs/portfolio-09.jpg"
+              media="(min-width: 1260px)"
+            />
+            <source srcset="imgs/portfolio-10.jpg" media="(min-width: 769px)" />
+            <img src="imgs/portfolio-09.jpg" alt="portfolio 9" />
+          </picture>
         </div>
         <div class="col4 col-m2">
-          <img src="imgs/portfolio-07.jpg" alt="portfolio 7" class="imgfit" />
-          <img src="imgs/portfolio-04.jpg" alt="portfolio 4" class="imgfit" />
+          <picture class="imgfit">
+            <source
+              srcset="imgs/portfolio-07.jpg"
+              media="(min-width: 1260px)"
+            />
+            <source srcset="imgs/portfolio-06.jpg" media="(min-width: 769px)" />
+            <img src="imgs/portfolio-07.jpg" alt="portfolio 7" />
+          </picture>
+          <picture class="imgfit">
+            <source
+              srcset="imgs/portfolio-04.jpg"
+              media="(min-width: 1260px)"
+            />
+            <source srcset="imgs/portfolio-07.jpg" media="(min-width: 769px)" />
+            <img src="imgs/portfolio-04.jpg" alt="portfolio 4" />
+          </picture>
         </div>
       </section>
       <section id="clients">
@@ -101,28 +147,63 @@
         </div>
         <div class="gridrow clientslist">
           <div class="col3 col-t4 col-m2">
-            <img src="imgs/client-1.png" alt="client 1" class="imgfit" />
+            <picture class="imgfit">
+              <source srcset="imgs/client-1.png" media="(min-width: 1260px)" />
+              <source
+                srcset="imgs/portfolio-08.jpg"
+                media="(min-width: 769px)"
+              />
+              <img src="imgs/client-1.png" alt="client 1" />
+            </picture>
           </div>
           <div class="col3 col-t4 col-m2">
-            <img src="imgs/client-2.png" alt="client 2" class="imgfit" />
+            <picture class="imgfit">
+              <source srcset="imgs/client-2.png" media="(min-width: 1260px)" />
+              <source srcset="imgs/client-1.png" media="(min-width: 769px)" />
+              <img src="imgs/client-2.png" alt="client 2" />
+            </picture>
           </div>
           <div class="col3 col-t4 col-m2">
-            <img src="imgs/client-3.png" alt="client 3" class="imgfit" />
+            <picture class="imgfit">
+              <source srcset="imgs/client-3.png" media="(min-width: 1260px)" />
+              <source srcset="imgs/client-2.png" media="(min-width: 769px)" />
+              <img src="imgs/client-3.png" alt="client 3" />
+            </picture>
           </div>
           <div class="col3 col-t4 col-m2">
-            <img src="imgs/client-4.png" alt="client 4" class="imgfit" />
+            <picture class="imgfit">
+              <source srcset="imgs/client-4.png" media="(min-width: 1260px)" />
+              <source srcset="imgs/client-3.png" media="(min-width: 769px)" />
+              <img src="imgs/client-4.png" alt="client 4" />
+            </picture>
           </div>
           <div class="col3 col-t4 col-m2">
-            <img src="imgs/client-5.png" alt="client 5" class="imgfit" />
+            <picture class="imgfit">
+              <source srcset="imgs/client-5.png" media="(min-width: 1260px)" />
+              <source srcset="imgs/client-4.png" media="(min-width: 769px)" />
+              <img src="imgs/client-5.png" alt="client 5" />
+            </picture>
           </div>
           <div class="col3 col-t4 col-m2">
-            <img src="imgs/client-6.png" alt="client 6" class="imgfit" />
+            <picture class="imgfit">
+              <source srcset="imgs/client-6.png" media="(min-width: 1260px)" />
+              <source srcset="imgs/client-5.png" media="(min-width: 769px)" />
+              <img src="imgs/client-6.png" alt="client 6" />
+            </picture>
           </div>
           <div class="col3 col-t4 col-m2">
-            <img src="imgs/client-7.png" alt="client 7" class="imgfit" />
+            <picture class="imgfit">
+              <source srcset="imgs/client-7.png" media="(min-width: 1260px)" />
+              <source srcset="imgs/portfolio-01.jpg" media="(min-width: 769px)" />
+              <img src="imgs/client-7.png" alt="client 7" />
+            </picture>
           </div>
           <div class="col3 col-t4 col-m2">
-            <img src="imgs/client-8.png" alt="client 8" class="imgfit" />
+            <picture class="imgfit">
+              <source srcset="imgs/client-8.png" media="(min-width: 1260px)" />
+              <source srcset="imgs/portfolio-02.jpg" media="(min-width: 769px)" />
+              <img src="imgs/client-8.png" alt="client 8" />
+            </picture>
           </div>
         </div>
       </section>

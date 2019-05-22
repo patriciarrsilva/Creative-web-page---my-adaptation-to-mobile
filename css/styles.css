@@ -342,6 +342,13 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
   float: left;
 }
 
+.imgfit img,
+.imgfit source {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 @media (min-width: 1260px) {
   .imgfit--firstline {
     width: 100%;
@@ -757,9 +764,7 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 }
 body > header {
   height: 100vh;
-  background-image: url(../imgs/header.jpg);
-  background-position: right top;
-  background-repeat: no-repeat;
+  position: relative;
 }
 body > header nav {
   padding-top: 45px;
@@ -800,16 +805,33 @@ body > header .textoverlay h3 {
   margin: 0;
 }
 
+#videoheader {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+}
+#videoheader video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 @media (min-width: 769px) {
-  body > header {
-    background-size: cover;
-    background-position: right center;
-  }
   body > header nav a.hamburgermenu {
     font-size: 24px;
   }
 }
 @media (min-width: 1260px) {
+  body > header {
+    height: 100vh;
+  }
   body .textoverlay h1 {
     font-size: 150px;
   }
@@ -1008,6 +1030,7 @@ body > header .textoverlay h3 {
   }
   #contacts > .col6#map {
     height: 500px;
+    background-image: url(../imgs/menu.jpg);
   }
 }
 @media (min-width: 1260px) {
@@ -1020,6 +1043,7 @@ body > header .textoverlay h3 {
   }
   #contacts > .col6#map {
     height: unset;
+    background-image: url(../imgs/map.JPG);
   }
 }
 footer {
@@ -1048,11 +1072,17 @@ footer a:hover {
 }
 
 @media (min-width: 769px) {
+  footer {
+    background-image: url(../imgs/header.jpg);
+  }
   footer h2 {
     font-size: 60px;
   }
 }
 @media (min-width: 1260px) {
+  footer {
+    background-image: url(../imgs/bgfooter.jpg);
+  }
   footer h2 {
     font-size: 72px;
   }
